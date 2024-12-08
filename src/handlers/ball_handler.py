@@ -20,11 +20,10 @@ class BalHandler:
 
         move = self.position
 
-        print(move)
-
         ball.element.x = ball.element.x + move[0]
         ball.element.y = ball.element.y + move[1]
 
+        # FIXME improve logics
         if ball.element.x <= 0:
             move[0] = -move[0]
         if ball.element.y <= 0:
