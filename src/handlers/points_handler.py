@@ -12,6 +12,7 @@ class PointsHandler:
 
     def update(self):
         points = self.blocks_handler.blocks_count - len(self.blocks_handler.blocks)
+        # print(self.blocks_handler.blocks_count, len(self.blocks_handler.blocks))
 
         font = pygame.font.Font(None, 30)
         texto = font.render(f"Pontuação: {points}", 1, Colors.BLACK)

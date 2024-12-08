@@ -25,7 +25,7 @@ class BlocksHandler:
         rows_distance = block_height + 10
 
         blocks = []
-        for row_number in range(2, self.blocks_rows_len):
+        for row_number in range(2, self.blocks_rows_len + 2):
             for col_number in range(self.blocks_by_rows):
                 blocks.append(
                     Block(Colors.RED_1,
